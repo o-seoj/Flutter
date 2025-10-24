@@ -17,6 +17,7 @@ var greet = (String name){
 };
 
 int plus(int a, int b) => a + b;
+
 int minus(a, b) => a - b;
 
 int calc(int x, int y, int Function(int, int) operation){
