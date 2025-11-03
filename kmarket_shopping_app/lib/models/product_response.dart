@@ -1,0 +1,25 @@
+
+import 'package:kmarket_shopping_app/models/product.dart';
+
+class ProductResponse{
+
+  final List<Product> dtoList;
+  final String category;
+  final int total;
+
+  ProductResponse({required this.dtoList, required this.category, required this.total});
+
+  
+  factory ProductResponse.fromJson(Map<String, dynamic> json){
+
+    final dtoList = json['dtoList'] as List;
+    List<Product> productList = dtoList.map((product) => Product.fromJson(product)).toList();
+    
+    return ProductResponse(
+      dtoList: productList,
+      category: json['category'],
+      total: json['total']
+    );
+  }
+  
+}
