@@ -51,7 +51,7 @@ class _HomeTabState extends State<HomeTab>{
 
     // AuthProvider 구독
     final authProvider = Provider.of<AuthProvider>(context);
-    bool isLoggedIn = authProvider.isLoggnedIn;
+    bool isLoggedIn = authProvider.isLoggedIn;
 
     log('isLoggedIn : $isLoggedIn');
 

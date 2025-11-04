@@ -86,7 +86,7 @@ class _MyTabState extends State<MyTab>{
 
     // AuthProvider 구독
     final authProvider = Provider.of<AuthProvider>(context);
-    bool isLoggedIn = authProvider.isLoggnedIn;
+    bool isLoggedIn = authProvider.isLoggedIn;
 
     return Scaffold(
       appBar: AppBar(title: const Text('마이페이지'),),
